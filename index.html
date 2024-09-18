@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <h1>Registraton Form</h1>
+        <div class="form odd">
+            <label for="name" class="required">Name</label>
+            <input type="text" id="name" name="name" required="" placeholder="Enter your name"><br><br>
+            <label for="DOB" class="required">DOB</label>
+            <input type="date" id="name" name="DOB" required="" placeholder="Enter your name"><br><br>
+            <label for="email" class="required">Email</label>
+            <input type="email" id="name" name="Email" required="" placeholder="Enter your email"><br><br>
+            <label for="mobile number" class="required">Mobile Number</label>
+            <input type="text" id="name" name="name" required="" placeholder="Enter your mobile number"><br><br>
+            <label for="r" class="required">City</label>
+            <input type="text" id="name" name="name" required="" placeholder="Enter your city"><br><br>
+            <button type="submit">Submit</button> <button type="reset">Reset</button>
+            <p><input type="checkbox">Agree to the terms and conditions</p>
+        </div>
+
+    </form>
+    <hr>
+    <form>
+
+        <h1>Enquiry Form</h1>
+        <div class="form even">
+            <label for="name" class="required">Name</label>
+            <input type="text" id="name" name="name" class="required" placeholder="Enter your name"><br><br>
+
+            <label for="email" class="required">Email</label>
+            <input type="email" id="name" name="Email" class="required" placeholder="Enter your email"><br><br>
+            <label for="mobile number" class="required">Location</label>
+            <select>
+                <option>Full stack Development</option>
+                <option>Frontend Development</option>
+                <option>Backend Development</option>
+                <option>AWS</option>
+            </select><br><br>
+            <label for="Location" class="required">Preffered Location</label>
+            <select>
+                <option>Anna Nagar</option>
+                <option>Besant Nagar</option>
+                <option>POrur</option>
+                <option>Omr</option>
+            </select><br><br>
+            <label for="Location" class="required">Current Location</label>
+            <input type="text" id="name" name="name" class="required" placeholder="Enter your Current location"><br>
+            <p><input type="checkbox">subscribe to newsletter</p>
+        </div>
+
+    </form>
+
+    <style>
+        option:nth-child(even) {
+            background-color: blue;
+        }
+
+        option:nth-child(odd) {
+            background-color: yellow;
+        }
+
+        .form {
+            text-align: left
+        }
+
+        .required{
+            border-radius: 10px;
+
+        }
+
+        .required::after {
+            content: "*";
+            color: red;
+        }
+
+        .required:hover {
+            color: green;
+
+        }
+
+        .required:focus {
+            border-color: blue;
+        }
+
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    </style>
+</body>
+
+</html>
